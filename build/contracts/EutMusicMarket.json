@@ -1,0 +1,914 @@
+{
+  "contractName": "EutMusicMarket",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "nftItemCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "nft_ledger",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "ownership_ledger",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "ownership_transaction_history",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "nft_address",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "last_transaction_time",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "watermark",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.0+commit.9e61f92b\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"nftItemCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"nft_ledger\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"ownership_ledger\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"ownership_transaction_history\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"nft_address\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"last_transaction_time\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"watermark\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/EutMusicMarket.sol\":\"EutMusicMarket\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/EutMusicMarket.sol\":{\"keccak256\":\"0xb08f3f33c76f0ea92da861444224630ac58838afb5ba68897f537461db47d8d0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://34d0309a31e9ff8a840ebbbab0df76e15b3d3415dc695aabf6458960cc75387c\",\"dweb:/ipfs/Qmbh6FiaLcSDVFdNzLsvkrwWs4k5DGkmoNyFaLCUjrfZP9\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506102c0806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80631e3056641461005157806389584480146100bf5780639c1f60991461012d578063c044e3841461014b575b600080fd5b6100936004803603602081101561006757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101ce565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610101600480360360208110156100d557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610201565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610135610234565b6040518082815260200191505060405180910390f35b61018d6004803603602081101561016157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061023a565b604051808573ffffffffffffffffffffffffffffffffffffffff16815260200184815260200183815260200182815260200194505050505060405180910390f35b60016020528060005260406000206000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60006020528060005260406000206000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60035481565b60026020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690806001015490806002015490806003015490508456fea26469706673582212209191746a70ac7239ee6df8b9bb2e0331f1f12e7cb69912fd12d37177d7e7ae6264736f6c63430007000033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80631e3056641461005157806389584480146100bf5780639c1f60991461012d578063c044e3841461014b575b600080fd5b6100936004803603602081101561006757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101ce565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610101600480360360208110156100d557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610201565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610135610234565b6040518082815260200191505060405180910390f35b61018d6004803603602081101561016157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061023a565b604051808573ffffffffffffffffffffffffffffffffffffffff16815260200184815260200183815260200182815260200194505050505060405180910390f35b60016020528060005260406000206000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60006020528060005260406000206000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60035481565b60026020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690806001015490806002015490806003015490508456fea26469706673582212209191746a70ac7239ee6df8b9bb2e0331f1f12e7cb69912fd12d37177d7e7ae6264736f6c63430007000033",
+  "immutableReferences": {},
+  "sourceMap": "107:805:4:-:0;;;842:68;;;;;;;;;;107:805;;;;;;",
+  "deployedSourceMap": "107:805:4:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;358:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;218:51;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;810:24;;;:::i;:::-;;;;;;;;;;;;;;;;;;;691:76;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;358:45;;;;;;;;;;;;;;;;;;;;;;:::o;218:51::-;;;;;;;;;;;;;;;;;;;;;;:::o;810:24::-;;;;:::o;691:76::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.6.0 <0.8.0;\n\n// SPDX-License-Identifier: MIT\n\n// EUT Master Contract\n// Holds auctions\ncontract EutMusicMarket {\n    // A ledger records on who owns which NFT\n    // user_address => nft_address\n    mapping(address => address) public ownership_ledger;\n\n    // A ledger records which NFT owned by who\n    // nft_address => user_address\n    mapping(address => address) public nft_ledger;\n\n    // Model a purchase transaction event\n    struct PurchaseTransaction {\n        address nft_address;\n        uint price;\n        uint last_transaction_time;\n        uint watermark; //how many times it's been shifted hand\n    }\n\n    // A ledger records who had which transaction\n    mapping(address => PurchaseTransaction) public ownership_transaction_history;\n\n    // Number of total nft recorded\n    uint public nftItemCount;\n\n\n    constructor () public {\n        // Pre-populate some questions\n    }\n}",
+  "sourcePath": "/Users/ethw/Desktop/EUT/contracts/EutMusicMarket.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/EutMusicMarket.sol",
+    "exportedSymbols": {
+      "EutMusicMarket": [
+        3403
+      ]
+    },
+    "id": 3404,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3375,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".0",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:31:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 3403,
+        "linearizedBaseContracts": [
+          3403
+        ],
+        "name": "EutMusicMarket",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "89584480",
+            "id": 3379,
+            "mutability": "mutable",
+            "name": "ownership_ledger",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3403,
+            "src": "218:51:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_address_$",
+              "typeString": "mapping(address => address)"
+            },
+            "typeName": {
+              "id": 3378,
+              "keyType": {
+                "id": 3376,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "226:7:4",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "218:27:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_address_$",
+                "typeString": "mapping(address => address)"
+              },
+              "valueType": {
+                "id": 3377,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "237:7:4",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "1e305664",
+            "id": 3383,
+            "mutability": "mutable",
+            "name": "nft_ledger",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3403,
+            "src": "358:45:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_address_$",
+              "typeString": "mapping(address => address)"
+            },
+            "typeName": {
+              "id": 3382,
+              "keyType": {
+                "id": 3380,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "366:7:4",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "358:27:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_address_$",
+                "typeString": "mapping(address => address)"
+              },
+              "valueType": {
+                "id": 3381,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "377:7:4",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "EutMusicMarket.PurchaseTransaction",
+            "id": 3392,
+            "members": [
+              {
+                "constant": false,
+                "id": 3385,
+                "mutability": "mutable",
+                "name": "nft_address",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3392,
+                "src": "489:19:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 3384,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "489:7:4",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3387,
+                "mutability": "mutable",
+                "name": "price",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3392,
+                "src": "518:10:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3386,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "518:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3389,
+                "mutability": "mutable",
+                "name": "last_transaction_time",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3392,
+                "src": "538:26:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3388,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "538:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3391,
+                "mutability": "mutable",
+                "name": "watermark",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3392,
+                "src": "574:14:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3390,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "574:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "PurchaseTransaction",
+            "nodeType": "StructDefinition",
+            "scope": 3403,
+            "src": "452:183:4",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "c044e384",
+            "id": 3396,
+            "mutability": "mutable",
+            "name": "ownership_transaction_history",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3403,
+            "src": "691:76:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_PurchaseTransaction_$3392_storage_$",
+              "typeString": "mapping(address => struct EutMusicMarket.PurchaseTransaction)"
+            },
+            "typeName": {
+              "id": 3395,
+              "keyType": {
+                "id": 3393,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "699:7:4",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "691:39:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_PurchaseTransaction_$3392_storage_$",
+                "typeString": "mapping(address => struct EutMusicMarket.PurchaseTransaction)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 3394,
+                "name": "PurchaseTransaction",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 3392,
+                "src": "710:19:4",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_PurchaseTransaction_$3392_storage_ptr",
+                  "typeString": "struct EutMusicMarket.PurchaseTransaction"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "9c1f6099",
+            "id": 3398,
+            "mutability": "mutable",
+            "name": "nftItemCount",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3403,
+            "src": "810:24:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3397,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "810:4:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3401,
+              "nodeType": "Block",
+              "src": "864:46:4",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 3402,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 3399,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "854:2:4"
+            },
+            "returnParameters": {
+              "id": 3400,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "864:0:4"
+            },
+            "scope": 3403,
+            "src": "842:68:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3404,
+        "src": "107:805:4"
+      }
+    ],
+    "src": "0:912:4"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/EutMusicMarket.sol",
+      "exportedSymbols": {
+        "EutMusicMarket": [
+          3403
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.6",
+            ".0",
+            "<",
+            "0.8",
+            ".0"
+          ]
+        },
+        "id": 3375,
+        "name": "PragmaDirective",
+        "src": "0:31:4"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            3403
+          ],
+          "name": "EutMusicMarket",
+          "scope": 3404
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "89584480",
+              "mutability": "mutable",
+              "name": "ownership_ledger",
+              "overrides": null,
+              "scope": 3403,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(address => address)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(address => address)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 3376,
+                    "name": "ElementaryTypeName",
+                    "src": "226:7:4"
+                  },
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 3377,
+                    "name": "ElementaryTypeName",
+                    "src": "237:7:4"
+                  }
+                ],
+                "id": 3378,
+                "name": "Mapping",
+                "src": "218:27:4"
+              }
+            ],
+            "id": 3379,
+            "name": "VariableDeclaration",
+            "src": "218:51:4"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "1e305664",
+              "mutability": "mutable",
+              "name": "nft_ledger",
+              "overrides": null,
+              "scope": 3403,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(address => address)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(address => address)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 3380,
+                    "name": "ElementaryTypeName",
+                    "src": "366:7:4"
+                  },
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 3381,
+                    "name": "ElementaryTypeName",
+                    "src": "377:7:4"
+                  }
+                ],
+                "id": 3382,
+                "name": "Mapping",
+                "src": "358:27:4"
+              }
+            ],
+            "id": 3383,
+            "name": "VariableDeclaration",
+            "src": "358:45:4"
+          },
+          {
+            "attributes": {
+              "canonicalName": "EutMusicMarket.PurchaseTransaction",
+              "name": "PurchaseTransaction",
+              "scope": 3403,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "nft_address",
+                  "overrides": null,
+                  "scope": 3392,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 3384,
+                    "name": "ElementaryTypeName",
+                    "src": "489:7:4"
+                  }
+                ],
+                "id": 3385,
+                "name": "VariableDeclaration",
+                "src": "489:19:4"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "price",
+                  "overrides": null,
+                  "scope": 3392,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3386,
+                    "name": "ElementaryTypeName",
+                    "src": "518:4:4"
+                  }
+                ],
+                "id": 3387,
+                "name": "VariableDeclaration",
+                "src": "518:10:4"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "last_transaction_time",
+                  "overrides": null,
+                  "scope": 3392,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3388,
+                    "name": "ElementaryTypeName",
+                    "src": "538:4:4"
+                  }
+                ],
+                "id": 3389,
+                "name": "VariableDeclaration",
+                "src": "538:26:4"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "watermark",
+                  "overrides": null,
+                  "scope": 3392,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3390,
+                    "name": "ElementaryTypeName",
+                    "src": "574:4:4"
+                  }
+                ],
+                "id": 3391,
+                "name": "VariableDeclaration",
+                "src": "574:14:4"
+              }
+            ],
+            "id": 3392,
+            "name": "StructDefinition",
+            "src": "452:183:4"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "c044e384",
+              "mutability": "mutable",
+              "name": "ownership_transaction_history",
+              "overrides": null,
+              "scope": 3403,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(address => struct EutMusicMarket.PurchaseTransaction)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(address => struct EutMusicMarket.PurchaseTransaction)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 3393,
+                    "name": "ElementaryTypeName",
+                    "src": "699:7:4"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "PurchaseTransaction",
+                      "referencedDeclaration": 3392,
+                      "type": "struct EutMusicMarket.PurchaseTransaction"
+                    },
+                    "id": 3394,
+                    "name": "UserDefinedTypeName",
+                    "src": "710:19:4"
+                  }
+                ],
+                "id": 3395,
+                "name": "Mapping",
+                "src": "691:39:4"
+              }
+            ],
+            "id": 3396,
+            "name": "VariableDeclaration",
+            "src": "691:76:4"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "9c1f6099",
+              "mutability": "mutable",
+              "name": "nftItemCount",
+              "overrides": null,
+              "scope": 3403,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3397,
+                "name": "ElementaryTypeName",
+                "src": "810:4:4"
+              }
+            ],
+            "id": 3398,
+            "name": "VariableDeclaration",
+            "src": "810:24:4"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "overrides": null,
+              "scope": 3403,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 3399,
+                "name": "ParameterList",
+                "src": "854:2:4"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 3400,
+                "name": "ParameterList",
+                "src": "864:0:4"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 3401,
+                "name": "Block",
+                "src": "864:46:4"
+              }
+            ],
+            "id": 3402,
+            "name": "FunctionDefinition",
+            "src": "842:68:4"
+          }
+        ],
+        "id": 3403,
+        "name": "ContractDefinition",
+        "src": "107:805:4"
+      }
+    ],
+    "id": 3404,
+    "name": "SourceUnit",
+    "src": "0:912:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.0+commit.9e61f92b.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2022-05-21T05:40:07.096Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
