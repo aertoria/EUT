@@ -1,5 +1,8 @@
-# Google TGIF Dory on Web3
+# Euterpe
 
+![alt text](src/images/img.png)
+
+# Working log
 # To start the application:
 
 truffle migrate -- reset
@@ -9,8 +12,8 @@ npm run dev
 
 ===
 ===
- truffle console
- c = await EutMusic.deployed()
- c1 = await c.flipSaleState()
- c3 = await c.totalSupply()
- await c.getEutMusicUrl(1)
+truffle console
+c = await EutMusic.deployed()
+c1 = await c.flipSaleState()
+c3 = await c.totalSupply()
+await c.getEutMusicUrl(1)
